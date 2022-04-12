@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DevFlix</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<img src="http://bricksdesign.com.br/wp-content/uploads/2022/04/devflix.svg" alt="" class="devflix-logo"> 
+
+	 <h1 class="favoritos">
+	      Favoritos
+	    </h1>
+
+	<script>
+
+		var listaFilmes = [
+  "https://m.media-amazon.com/images/M/MV5BYTMxMGY1OGQtZmUzNy00NjhmLTlhNzItZDBiNzhlMTgwZjZlXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_FMjpg_UX1000_.jpg",
+  "https://m.media-amazon.com/images/M/MV5BOThjODMyM2QtNTNhYi00ZGM4LWIxZTAtMDAyYWNhYzYxMjJiXkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UX1000_.jpg",
+  "https://m.media-amazon.com/images/M/MV5BNmVmMmM5ZmItZDg0OC00NTFiLWIxNzctZjNmYTY5OTU3ZWU3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
+  "https://m.media-amazon.com/images/M/MV5BZGZiMTkzZjktNzk0OC00NzEzLWJjOTMtYjdkMWM1NGU1ZDM4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg",
+  "https://m.media-amazon.com/images/M/MV5BMTkzNjEzMDEzMF5BMl5BanBnXkFtZTgwMDI0MjE4MjE@._V1_FMjpg_UX1000_.jpg"
+];
+
+for (var i = 0; i < listaFilmes.length; i++) {
+  document.write("<img src =" + listaFilmes[i] + ">");
+}
+
+function adicionarFilme() {
+  let filmeFavorito = document.getElementById("filme").value;
+
+  if (filmeFavorito.endsWith(".jpg")) {
+    listarFilme(filmeFavorito);
+  } else {
+    console.error("Imagem inválida");
+  }
+  document.getElementById("filme").value = "";
+}
+
+function listarFilme(filme) {
+  let elementoFilmeFavorito = "<img src=" + filme + ">";
+  let elementoListaFilmes = document.getElementById("listaFilmes");
+  elementoListaFilmes.innerHTML =
+    elementoListaFilmes.innerHTML + elementoFilmeFavorito;
+}
+
+function removerFilme() {
+  const removeImage = document.getElementById("listaFilmes");
+  removeImage.removeChild(removeImage.childNodes[0]);
+}
+
+</script>
+
+</head>
+<body>
+
+	<div class="container">
+	    <h1 class="page-title">
+	      Adicione seu filme ou série:
+	    </h1>
+	    <p class="page-subtitle">
+	      
+	    </p>
+		    <div class="form-wrapper">
+		      <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+		      <button onClick="adicionarFilme()">Adicionar </button>
+		      <button onClick="removerFilme()">Remover</button>
+		    </div>
+		    
+  	</div>
+
+  	<div id="listaFilmes"></div>
+  	<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+  	<a href="https://alura.com.br/" target="_blank">
+  	<img src="http://bricksdesign.com.br/wp-content/uploads/2022/04/LDB-white.svg" alt="" class="ldb-logo">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+
+  </a>
+
+</body>
+</html>

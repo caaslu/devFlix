@@ -1,0 +1,72 @@
+body {
+  font-family: "Open Sans", monospace;
+  text-align: center;
+  background-image: url("http://bricksdesign.com.br/wp-content/uploads/2022/04/wallpaperbetter-min2-min.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+.imgx {
+  -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%);
+  background-image: url("http://bricksdesign.com.br/wp-content/uploads/2022/04/wallpaperbetter-min.jpg");
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.favoritos {
+  color: #ffffff;
+  margin: 30px 0 30px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+  margin: 30px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.ldb-logo {
+  width: 80px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.devflix-logo {
+  width: 180px;
+  margin: 40px 0px 0px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
+
+#listaFilmes img {
+  margin: 10px;
+  max-height: 250px;
+}
