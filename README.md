@@ -14,7 +14,9 @@ Tecnologias:
 
 
 
-Para testar o projeto, acesseo link:  https://codepen.io/lucas-dallavalle/full/MWrgrOb
+Para testar o projeto, acesse o link:  https://codepen.io/lucas-dallavalle/full/MWrgrOb
+
+Site direto do proejto: https://devflix-alura.netlify.app/
 
 
 # Autor
